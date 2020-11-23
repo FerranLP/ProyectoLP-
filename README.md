@@ -1,7 +1,7 @@
 # ProyectoLP
 Este proyecto trata de crear un árbol de decisión (decision Tree) en Haskell con los datos que tenemos en el fichero "agaricus-lepiota.data" para poder clasificar setas entre venenosas y comestibles.
 
-# Descripcion
+## Descripcion
 Aunque dentro del codigo solo tengamos 2 partes marcadas, el cálculo de la entropía y la creación del árbol, podríamos dividir el programa en un total de 3.
 
   1a parte: La primera parte del programa es el cáluclo de la entropia.
