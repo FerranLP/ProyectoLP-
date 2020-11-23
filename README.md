@@ -14,7 +14,7 @@ Aunque dentro del codigo solo tengamos 2 partes marcadas, el cálculo de la entr
 La instalación del programa es muy simple:
 
     1.Primero de todo tendremos que entrar con la consola al directorio donde tengamos el progrma "dts.hs" 
-    y el archivo "agaricus-lepiota.data".
+      y el archivo "agaricus-lepiota.data".
     
     2.Debemos ejecutar el siguiente comando para entrar al compilador de haskell: -$ ghci
     
@@ -24,7 +24,8 @@ La instalación del programa es muy simple:
     
 Si esta opción nos falla dejo otra opción:
 
-    1.Desde la carpeta donde tenemos el programa "dts.hs" y el archivo "agaricus-lepiota.data" abrimos la terminal y ejecutamos el siguiente comando:
+    Desde la carpeta donde tenemos el programa "dts.hs" y el archivo "agaricus-lepiota.data" abrimos la terminal 
+      y ejecutamos el siguiente comando:
     -$ ghc dts.hs. Este nos generará 3 archivos: "dts", "dts.hi", "dts.o"
     Si quisieramos correr el programa simplemente tendriamos que ejecutar el siguiente comando: -$ ./dts
 
