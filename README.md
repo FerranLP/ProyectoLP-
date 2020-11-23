@@ -30,4 +30,12 @@ Si esta opción nos falla dejo otra opción:
     Si quisieramos correr el programa simplemente tendriamos que ejecutar el siguiente comando: -$ ./dts
 
 # Usage
-Una vez compilado y ejecutado el programa nos imprimirá un árbol. Este es el árbol de decisión. A continuación el programa nos preguntará alguna característica de una seta y nosotros tendremos que ir respondiendo. Una vez hayamos respondido (como máximo 4 preguntas) el programa irá filtrando las respuestas y recorriendo el árbol para así decirnos si la seta que hemos descrito con las respuestas es venenosa o comestible.
+Una vez compilado y ejecutado el programa nos imprimirá un árbol. Este es el árbol de decisión. A continuación el programa nos preguntará alguna característica de una seta y nosotros tendremos que ir respondiendo. Una vez hayamos respondido (como máximo 4 preguntas) el programa irá filtrando las respuestas y recorriendo el árbol para así decirnos si la seta que hemos descrito con las respuestas es venenosa o comestible. Si por algun error, el usuario se equivocara al teclear el parametro, el programa tiene un control de errores que hará que nos vuelva a pedir el dato.
+
+
+# Calculo de las entropias
+Para calcular las entropias he usado las diapositivas que nos daban en el enunciado de la practica. 
+Para hacer este cálculo he necesitado para cada atributo de cada columna, guardar cuantas veces el mismo atributo era comestible y cuantas venenoso. Una vez he tenido eso, he hecho una función que me retorna el máximo entre estos 2 valores para cada atributo de cada columna. Y teniendo este máximo ya solo ha quedado sumar los maximos para calcular el numerador de la entropía de la columna. Como todas las columnas tienen en todo momento las mismas filas, he pensado que para el cálculo que necesito, no hace falta dividir entre el total del columnas como dice la teoria. Una vez tienes el máximo de cada columna, simplemente queda ver cual es el numero mas grande entre todas las columnas.
+
+
+ 
