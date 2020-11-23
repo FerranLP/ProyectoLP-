@@ -52,4 +52,3 @@ https://gebakx.github.io/hs-dts/
 
 https://jpetit.jutge.org/haskell/#1
 
-## Aprendizaje
