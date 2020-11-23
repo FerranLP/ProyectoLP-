@@ -1,8 +1,10 @@
+Ferran Villar Rodriguez                                               
+
+Grup 22
+
+
+
 # ProyectoLP
-Ferran Villar Rodriguez        Grup 22
-
-
-
 Este proyecto trata de crear un árbol de decisión (decision Tree) en Haskell con los datos que tenemos en el fichero "agaricus-lepiota.data" para poder clasificar setas entre venenosas y comestibles.
 
 ## Descripcion
