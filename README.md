@@ -19,21 +19,23 @@ Aunque dentro del codigo solo tengamos 2 partes marcadas, el cálculo de la entr
 ## Instalación  
 La instalación del programa es muy simple:
 
-    1.Primero de todo tendremos que entrar con la consola al directorio donde tengamos el progrma "dts.hs" 
-      y el archivo "agaricus-lepiota.data".
+    1.Primero de todo tendremos que entrar con la consola al directorio donde tengamos el progrma 
+      "dts.hs" y el archivo "agaricus-lepiota.data".
     
     2.Debemos ejecutar el siguiente comando para entrar al compilador de haskell: -$ ghci
     
     3.Una vez en el compilador compilaremos el programa poniendo: Prelude> :load dts.hs
     
-    Si quisieramos correr el programa simplemente tendriamos que ejecutar el siguiente comando: Prelude> main
+    Si quisieramos correr el programa simplemente tendriamos que ejecutar el siguiente comando: 
+       Prelude> main
     
 Si esta opción nos falla dejo otra opción:
 
-    Desde la carpeta donde tenemos el programa "dts.hs" y el archivo "agaricus-lepiota.data" abrimos la terminal 
-    y ejecutamos el siguiente comando:
+    Desde la carpeta donde tenemos el programa "dts.hs" y el archivo "agaricus-lepiota.data" abrimos 
+    la terminal y ejecutamos el siguiente comando:
     -$ ghc dts.hs. Este nos generará 3 archivos: "dts", "dts.hi", "dts.o"
-    Si quisieramos correr el programa simplemente tendriamos que ejecutar el siguiente comando: -$ ./dts
+    Si quisieramos correr el programa simplemente tendriamos que ejecutar el siguiente comando: 
+    -$ ./dts
 
 ## Usage
 Una vez compilado y ejecutado el programa nos imprimirá un árbol. Este es el árbol de decisión. A continuación el programa nos preguntará alguna característica de una seta y nosotros tendremos que ir respondiendo. Una vez hayamos respondido (como máximo 4 preguntas) el programa irá filtrando las respuestas y recorriendo el árbol para así decirnos si la seta que hemos descrito con las respuestas es venenosa o comestible. Si por algun error, el usuario se equivocara al teclear el parametro, el programa tiene un control de errores que hará que nos vuelva a pedir el dato.
