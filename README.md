@@ -1,5 +1,5 @@
 # ProyectoLP
-Este proyecto trata de crear un árbol de decisión (decision Tree) en Haskell con los datos que tenemos en el fichero "agaricus-lepiota.data".
+Este proyecto trata de crear un árbol de decisión (decision Tree) en Haskell con los datos que tenemos en el fichero "agaricus-lepiota.data" para poder clasificar setas entre venenosas y comestibles.
 
 # Descripcion
 Aunque dentro del codigo solo tengamos 2 partes marcadas, el cálculo de la entropía y la creación del árbol, podríamos dividir el programa en un total de 3.
@@ -25,7 +25,7 @@ La instalación del programa es muy simple:
 Si esta opción nos falla dejo otra opción:
 
     Desde la carpeta donde tenemos el programa "dts.hs" y el archivo "agaricus-lepiota.data" abrimos la terminal 
-      y ejecutamos el siguiente comando:
+    y ejecutamos el siguiente comando:
     -$ ghc dts.hs. Este nos generará 3 archivos: "dts", "dts.hi", "dts.o"
     Si quisieramos correr el programa simplemente tendriamos que ejecutar el siguiente comando: -$ ./dts
 
@@ -37,5 +37,3 @@ Una vez compilado y ejecutado el programa nos imprimirá un árbol. Este es el �
 Para calcular las entropias he usado las diapositivas que nos daban en el enunciado de la practica. 
 Para hacer este cálculo he necesitado para cada atributo de cada columna, guardar cuantas veces el mismo atributo era comestible y cuantas venenoso. Una vez he tenido eso, he hecho una función que me retorna el máximo entre estos 2 valores para cada atributo de cada columna. Y teniendo este máximo ya solo ha quedado sumar los maximos para calcular el numerador de la entropía de la columna. Como todas las columnas tienen en todo momento las mismas filas, he pensado que para el cálculo que necesito, no hace falta dividir entre el total del columnas como dice la teoria. Una vez tienes el máximo de cada columna, simplemente queda ver cual es el numero mas grande entre todas las columnas.
 
-
- 
